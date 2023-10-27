@@ -1,0 +1,158 @@
+.navbar-container {
+    height: 56px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 10;
+
+    @media (min-width: 769px) {
+        height: 76px;
+        padding: 0 10px;
+    }
+}
+
+.navbar-item-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 35px;
+}
+
+.navbar-item-1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.navbar-item-2 {
+    @media (min-width: 769px) {
+        display: none;
+    }
+}
+
+.navbar-item-3 {
+    display: none;
+
+    @media (min-width: 769px) {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+}
+
+.menu-item-desktop > a {
+    color: rgba(139, 144, 167, 1);
+    text-decoration: none;
+}
+
+.menu-item-desktop > a:hover {
+    text-decoration: underline;
+    color: rgba(232, 236, 251, 1);
+}
+
+.burger-container {
+    cursor:pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger-item {
+    height: 3px;
+    width: 25px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.full-screen-menu {
+    position: fixed;
+    overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 20;
+}
+
+.menu-header-container {
+    height: 56px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.close-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin: 0 35px;
+}
+
+.close {
+    z-index:1;
+    width: 30px;
+    height:30px;
+    cursor:pointer;
+    position:relative;
+}
+.close span{
+    position:absolute;
+    width:80%;
+    height:3px;
+    left:10%;
+    top:45%;
+    background-color: white;
+}
+
+.first {
+    border-radius: 20px;
+    transform:rotate(45deg);
+}
+.last {
+    border-radius: 20px;
+    transform:rotate(-45deg);
+}
+
+.menu-container {
+    margin-top: 60%;
+}
+
+.menu-item-container {
+    display: flex;
+    justify-content: center;
+}
+
+.join-discord-button {
+    cursor: pointer;
+    height: 40px;
+    min-width: 140px;
+    background-color: rgba(232, 236, 251, 1);
+    padding: 12px 30px;
+    color: rgba(33, 35, 47, 1);
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.join-discord-button:hover {
+    background-color: rgba(232, 236, 251, 0.9);
+}
+
+.item-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item {
+    color: rgba(232, 236, 251, 1);
+}

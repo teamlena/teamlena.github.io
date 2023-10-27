@@ -1,0 +1,125 @@
+.about {
+    margin: 40px 30px 60px;
+
+    @media (min-width: 992px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.about-container {
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.about-container-desktop {
+    display: none;
+    @media (min-width: 992px) {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+}
+
+.left-side-desktop {
+    flex-basis: 50%;
+}
+
+.right-side-desktop {
+    flex-basis: 50%;
+}
+
+.about-header-desktop-container {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 20px;
+}
+
+.about-header-desktop {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 52px;
+    text-align: left;
+    letter-spacing: -2px;
+    display: inline-block;
+    position: relative;
+    color: rgba(105, 105, 105, 1);
+    opacity: 0.5;
+
+    @media (min-width: 992px) {
+        display: block;
+        font-size: 72px;
+    }
+}
+
+.about-header {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 52px;
+    text-align: left;
+    letter-spacing: -2px;
+    display: inline-block;
+    position: relative;
+    color: rgba(105, 105, 105, 1);
+    opacity: 0.5;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.line-through {
+    opacity: 1;
+    height: 7px;
+    width: 100%;
+    background: rgba(255, 222, 47, 1);
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    transform-origin: left center;
+}
+
+.about-header-2 {
+    font-size: 50px;
+    line-height: 52px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -2px;
+    color: rgb(232, 236, 251);
+    display: inline-block;
+
+    @media (min-width: 992px) {
+        font-size: 72px;
+    }
+}
+
+.about-image {
+    margin-top: 30px;
+}
+
+.about-image > img {
+    width: 100%;
+}
+
+.about-description {
+    margin-top: 44px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 1);
+
+    @media (min-width: 992px) {
+        font-size: 24px;
+        line-height: 36px;
+    }
+}

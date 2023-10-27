@@ -1,0 +1,179 @@
+.faq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 16px;
+
+    @media (min-width: 992px) {
+        margin: 0 240px;
+    }
+}
+
+.faq-header {
+    padding-top: 50px;
+    font-size: 50px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    letter-spacing: -1px;
+    line-height: 61px;
+    font-weight: 500;
+
+    @media (min-width: 992px) {
+        font-size: 72px;
+        width: 70%;
+        line-height: 87px;
+    }
+}
+
+.faq-container {
+    margin-top: 88px;
+
+    width: 80%;
+
+    @media (min-width: 992px) {
+        width: 100%;
+    }
+}
+
+.question-container {
+    position: relative;
+    margin-bottom: 20px;
+
+    @media (min-width: 992px) {
+        margin-bottom: 35px;
+    }
+}
+
+.question-label {
+    text-transform: none;
+    cursor: pointer;
+    color: rgb(207, 212, 235);
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+    padding-left: 20px;
+
+    @media (min-width: 992px) {
+        font-size: 28px;
+        line-height: 34px;
+    }
+}
+
+/*.question-container .question-label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}*/
+
+.question-container .question-content {
+    position: relative;
+    height: 0;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+    color: rgb(207, 212, 235);
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    line-height: 19px;
+    font-size: 16px;
+    margin-left: 48px;
+
+    @media (min-width: 992px) {
+        margin-left: 80px;
+    }
+}
+
+/* Unhides the content part when active. Sets the height */
+
+.question-container.active .question-content {
+    height: auto;
+}
+
+.question-header {
+    display: flex;
+    align-items: center;
+}
+
+.plus-button {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(65, 70, 98, 1);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+
+    /* Centering the plus sign */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 992px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.plus-button > span {
+    margin-top: -23px;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 150;
+    color: #fff;
+    text-align: center;
+
+    @media (min-width: 992px) {
+        margin-top: 8px;
+    }
+}
+
+.minus-button {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgba(65, 70, 98, 1);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+
+    /* Centering the plus sign */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 992px) {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.minus-button > span {
+    margin-top: -23px;
+    width: 100%;
+    height: 100%;
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 150;
+    color: #fff;
+    text-align: center;
+
+    @media (min-width: 992px) {
+        margin-top: 8px;
+    }
+}
+
+.hidden {
+    display: none;
+}
